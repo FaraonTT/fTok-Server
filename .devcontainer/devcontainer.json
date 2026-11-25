@@ -1,0 +1,8 @@
+{
+  "name": "fTok-Server",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "secrets": { "GH_TOKEN": { "description": "Fine-grained токен: только этот репозиторий, Contents: Read and write" } },
+  "forwardPorts": [8080],
+  "portsAttributes": { "8080": { "visibility": "public" } },
+  "postAttachCommand": "node server.js"
+}
